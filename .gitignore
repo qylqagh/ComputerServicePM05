@@ -1,0 +1,10 @@
+bin/
+obj/
+publish/
+Delivery/
+.vs/
+*.user
+*.suo
+*.db
+*.db-shm
+*.db-wal

@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net10.0-windows</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<LangVersion>12</LangVersion>
+		<ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+		<RootNamespace>ComputerServicePM05</RootNamespace>
+		<AssemblyName>ComputerServicePM05</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="publish\**" />
+	  <EmbeddedResource Remove="publish\**" />
+	  <None Remove="publish\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.13" />
+	</ItemGroup>
+
+</Project>
